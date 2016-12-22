@@ -1,0 +1,54 @@
+FORMAT: 1A
+HOST: http://polls.apiblueprint.org/
+
+# Happy_Birthday
+
+Поздравь друзей с днём рождения.
+
+
+## Получение списка дней рождения [/get_calendar]
+
+### Получить все события [GET]
+
++ Response 200 (application/json)
+
+        [
+            {
+                "events": [
+                    {
+                        "id": 1,
+                        "name": "День рождения",
+                        "personId": 1,
+                        "date": 1234567890,
+                    }, {
+                        "id": 1,
+                        "name": "Юбилей студии",
+                        "personId": nil,
+                        "date": 1244567890,
+                    }, 
+                ]
+            }
+        ]
+        
+        
+## Получение списка друзей [/get_persons]
+
+### Получить всех друзей [GET]
+
++ Response 200 (application/json)
+
+        [
+            {
+                "persons": [
+                    {
+                        "id": 1,
+                        "name": "Иван",
+                        "surname": "Иванов"
+                    }, {
+                        "id": 1,
+                        "name": "Василий",
+                        "surname": "Васильев"
+                    }, 
+                ]
+            }
+        ]
